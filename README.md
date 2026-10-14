@@ -50,7 +50,3 @@ To run the analysis:
 2. Install the R packages listed at the beginning of the script.
 3. Update the local working-directory setting in the script or run it from the project directory.
 4. Execute the script in R or RStudio.
-
-## Reference
-
-Cardona-Vasquez, D., Garcia-Rendon, J., & Arango-Manrique, A. (2024). Effect of the intermittency of non-conventional renewable energy sources on the volatility of the Colombian spot price. *Renewable Energy, 232*. https://doi.org/10.1016/j.renene.2024.121073
