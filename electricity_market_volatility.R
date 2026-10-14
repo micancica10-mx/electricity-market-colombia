@@ -27,7 +27,7 @@ library(stargazer)
 
 #Import data
 # Load the data from the Excel file
-setwd("C:/Users/mcanc/OneDrive - Universidad EAFIT/tesis/maria_electiva") 
+setwd("C:/Users") 
 rm(list=ls())
 
 data.dc <- read_excel("data.xlsx", sheet = "data_dc")
