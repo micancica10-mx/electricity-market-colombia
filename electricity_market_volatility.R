@@ -63,7 +63,7 @@ data$dates<-as.Date(data$dates,format="%y-%m-%d")
 
 # Convert variables into daily time series
 pbolsa.ts <- ts(data$pbolsa, start = c(2018, 1), frequency = 365)     # Spot price
-pofe_hidro.ts <- ts(data$pofe_hidro, start = c(2018, 1), frequency = 365) # Weighted Hydroelectric Price
+pofe_hidro.ts <- ts(data$pofe_hidro, start = c(2018, 1), frequency = 365) # Hydroelectric Bid Price
 disp_hidro.ts <- ts(data$disp_hidro, start = c(2018, 1), frequency = 365) # Hydropower Availability
 gen_frnc.ts <- ts(data$gen_frnc, start = c(2018, 1), frequency = 365)     # NCRES Generation
 
@@ -84,11 +84,11 @@ ggplot(data, aes(x = dates, y = pbolsa)) +
   ylab("Spot Price (pbolsa)") +
   theme(axis.text.x = element_text(angle = 90))
 
-# Weighted Hydroelectric Price (pofe_hidro)
+# Hydroelectric Bid Price (pofe_hidro)
 ggplot(data, aes(x = dates, y = pofe_hidro)) +
   geom_line() +
   scale_x_date('Dates', date_breaks = "1 year") +
-  ylab("Hydroelectric Price (pofe_hidro)") +
+  ylab("Hydroelectric Bid Price (pofe_hidro)") +
   theme(axis.text.x = element_text(angle = 90))
 
 #data[, 5] <- data[, 5]/1000000
